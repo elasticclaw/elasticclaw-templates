@@ -9,16 +9,15 @@ Templates define the starting context for AI agent claws — personality, tools,
 | Template | Description |
 |---|---|
 | `base` | Minimal starting point. A blank-slate agent ready for any task. |
-| `elasticclaw-dev` | ElasticClaw development agent. Pre-loaded with codebase knowledge. |
 
 ## Using templates
 
 ```bash
-# Use a template by name (fetched from this registry)
-elasticclaw create --template base --name my-claw
+# Default — uses 'base' template
+elasticclaw create --name my-claw
 
-# The default template if --template is omitted
-elasticclaw create --name my-claw   # uses "base"
+# Specify a template
+elasticclaw create --template base --name my-claw
 
 # List available templates
 elasticclaw template list
