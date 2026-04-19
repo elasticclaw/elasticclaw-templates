@@ -1,0 +1,4 @@
+# ElasticClaw base template — minimal starting point
+provider: replicated
+instance_type: r1.large
+ttl: 48h
